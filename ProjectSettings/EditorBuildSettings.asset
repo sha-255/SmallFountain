@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Load.unity
-    guid: 147aaf0ba4de61c4289bd1e74c308154
-  - enabled: 1
-    path: Assets/Scenes/Quest.unity
-    guid: d26a60b0ba27a0448beeb23cb24ac3fb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
