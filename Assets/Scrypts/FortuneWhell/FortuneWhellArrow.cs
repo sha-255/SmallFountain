@@ -1,18 +1,26 @@
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FortuneWhellArrow : MonoBehaviour
 {
-    [SerializeField] private FortuneWhell FortuneWhell;
-    [SerializeField] private float minVelosity;
+    [SerializeField] private FortuneWhell _fortuneWhell;
+    [SerializeField] private float _minVelosity = 80;
+    [SerializeField] private UnityEvent<int> _cellSelected;
+    private List<int> _cellsId = new List<int>();
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (FortuneWhell.SpinVelocity < minVelosity)
+        if (_fortuneWhell.SpinVelocity < _minVelosity)
         {
-            FortuneWhell.SpinVelocity = 0;
-            var text = collision.gameObject?.GetComponent<TMP_Text>();
-            print(text?.text);
+            _fortuneWhell.SpinVelocity = 0;
+            var cell = collision.gameObject.GetComponentInParent<Cell>();
+            if (!_cellsId.Contains(cell.Id))
+            {
+                cell.Interactable = false;
+                _cellsId.Add(cell.Id);
+                _cellSelected?.Invoke(cell.Id);
+            }
         }
     }
 }

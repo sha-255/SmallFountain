@@ -6,10 +6,11 @@ public class FortuneWhell : MonoBehaviour
     [SerializeField] private float minSpin;
     [SerializeField] private float maxSpin;
     private new Rigidbody2D rigidbody2D;
-    public float SpinVelocity 
+
+    public float SpinVelocity
     { 
-        get => rigidbody2D.angularVelocity;
-        set => rigidbody2D.angularVelocity = value;
+        get => Mathf.Abs(rigidbody2D.angularVelocity);
+        set => rigidbody2D.angularVelocity = value * -1;
     }
 
     void Awake()
@@ -19,6 +20,6 @@ public class FortuneWhell : MonoBehaviour
 
     public void Spin()
     {
-        rigidbody2D.angularVelocity = Random.Range(minSpin, maxSpin);
+        SpinVelocity = Random.Range(minSpin, maxSpin);
     }
 }
