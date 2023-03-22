@@ -37,9 +37,14 @@ public class Cell : MonoBehaviour
         set => _trigger = value;
     }
 
-    private void Awake()
+    private void Start()
     {
         _text.text = (_id + 1).ToString();
+        OnInteractable();
+    }
+
+    private void OnInteractable()
+    {
         _textColor = _text.color;
         _notInteractable += () =>
         {
@@ -50,9 +55,9 @@ public class Cell : MonoBehaviour
             0.5f);
             _trigger.enabled = false;
         };
-        _onInteractable += () => 
-        { 
-            _text.color = _textColor; 
+        _onInteractable += () =>
+        {
+            _text.color = _textColor;
             _trigger.enabled = true;
         };
     }

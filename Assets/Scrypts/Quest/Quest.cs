@@ -1,4 +1,6 @@
 using Assets.Scrypts.Extensions;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -20,11 +22,27 @@ public class Quest : MonoBehaviour
     private int _questionIndex;
     private List<AnswerView> _questAnswers = new List<AnswerView>();
 
+    public Question[] Questions
+    { 
+        get => _questions;
+        private set => _questions = value;
+    }
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        _succesfull.AddListener(() => print("succesfull"));
-        _failed.AddListener(() => print("failed"));
+        _succesfull.AddListener(() => StartCoroutine(OnSuccesfull()));
+        _failed.AddListener(() => StartCoroutine(OnFailed()));
+    }
+    //
+    private IEnumerator OnSuccesfull()
+    {
+        yield return null;
+    }
+
+    private IEnumerator OnFailed()
+    {
+        yield return null;
     }
 
     public void OpenQuest(int id)
@@ -35,11 +53,11 @@ public class Quest : MonoBehaviour
         _questionInstance.CheckAnswersButton.onClick.AddListener(() => 
         {
             var succesfulItems = 0;
-            for (var i = 0; i < _questions[_questionIndex].Answers.Length; i++)
+            for (var i = 0; i < Questions[_questionIndex].Answers.Length; i++)
                 if (_questAnswers.Find(x => x.Id == i).CurrentType 
-                    == _questions[_questionIndex].Answers[i].Type)
+                    == Questions[_questionIndex].Answers[i].Type)
                     succesfulItems++;
-            if (succesfulItems == _questions[_questionIndex].Answers.Length)
+            if (succesfulItems == Questions[_questionIndex].Answers.Length)
                 _succesfull?.Invoke();
             else
                 _failed?.Invoke();
@@ -51,11 +69,11 @@ public class Quest : MonoBehaviour
         _questionInstance = Instantiate(_questionPrefab);
         _questionInstance.transform.SetParent(transform);
         _questionInstance.transform.localScale = Vector3.one;
-        _questionInstance.Question = _questions[_questionIndex].QuestionText;
+        _questionInstance.Question = Questions[_questionIndex].QuestionText;
         _questionInstance.VoiceButton.onClick.AddListener(() => 
         {
             if (!audioSource.isPlaying)
-                audioSource.PlayOneShot(_questions[_questionIndex].Voiceover);
+                audioSource.PlayOneShot(Questions[_questionIndex].Voiceover);
         });
     }
 
@@ -63,7 +81,7 @@ public class Quest : MonoBehaviour
     {
         _questAnswers.Clear();
         var index = 0;
-        foreach (var answer in _questions[_questionIndex].Answers)
+        foreach (var answer in Questions[_questionIndex].Answers)
         {
             var a = Instantiate(_ansverPrefab);
             a.Text = answer.Text;
@@ -72,7 +90,7 @@ public class Quest : MonoBehaviour
             a.VoiceButton.onClick.AddListener(() =>
             {
                 if (!audioSource.isPlaying)
-                    audioSource.PlayOneShot(_questions[_questionIndex].Answers[a.Id].Voiceover);
+                    audioSource.PlayOneShot(Questions[_questionIndex].Answers[a.Id].Voiceover);
             });
             index++;
         }
