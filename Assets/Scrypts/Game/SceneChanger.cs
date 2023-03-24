@@ -11,8 +11,12 @@ public class SceneChanger : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
+
+    public void Exit() => Application.Quit();
+
+    public void Reload() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     public void StartLoad()
     {

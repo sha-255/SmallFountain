@@ -32,5 +32,12 @@ public class QuestionView : MonoBehaviour
         set => _checkAnswers = value;
     }
 
+    [SerializeField] private Image bacGround;
+    public Image BacGround
+    {
+        get => bacGround;
+        set => bacGround = value;
+    }
+
     public void Destroy() => Destroy(gameObject);
 }

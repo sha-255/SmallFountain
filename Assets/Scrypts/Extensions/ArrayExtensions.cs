@@ -1,4 +1,7 @@
-﻿namespace Assets.Scrypts.Extensions
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Assets.Scrypts.Extensions
 {
     public static class ArrayExtensions
     {
@@ -14,5 +17,8 @@
             }
             return values;
         }
+
+        public static List<T> Mix<T>(this IEnumerable<T> values)
+            => values.ToArray().Mix().ToList();
     }
 }

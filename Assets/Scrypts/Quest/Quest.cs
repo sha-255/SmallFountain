@@ -1,8 +1,6 @@
 using Assets.Scrypts.Extensions;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,8 +13,11 @@ public class Quest : MonoBehaviour
     [Header("Software")]
     [SerializeField] private QuestionView _questionPrefab;
     [SerializeField] private AnswerView _ansverPrefab;
+    [SerializeField] private Drops _dropsCounter;
     [SerializeField] private UnityEvent _succesfull;
+    [SerializeField] private Color _succesfullColor;
     [SerializeField] private UnityEvent _failed;
+    [SerializeField] private Color _failedColor;
     private AudioSource audioSource;
     private QuestionView _questionInstance;
     private int _questionIndex;
@@ -33,16 +34,29 @@ public class Quest : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         _succesfull.AddListener(() => StartCoroutine(OnSuccesfull()));
         _failed.AddListener(() => StartCoroutine(OnFailed()));
+        _dropsCounter.MaxCount = _questions.Length;
     }
-    //
+
     private IEnumerator OnSuccesfull()
     {
-        yield return null;
+        var imadge = _questionInstance.BacGround;
+        var col = imadge.color;
+        imadge.color = _succesfullColor;
+        yield return new WaitForSeconds(1);
+        imadge.color = col;
+        _dropsCounter.CurrentCount++;
+        _questionInstance.Destroy();
     }
 
     private IEnumerator OnFailed()
     {
-        yield return null;
+        var imadge = _questionInstance.BacGround;
+        var col = imadge.color;
+        imadge.color = _failedColor;
+        yield return new WaitForSeconds(1);
+        imadge.color = col;
+        _dropsCounter.CurrentCount--;
+        _dropsCounter.MaxCount--;
     }
 
     public void OpenQuest(int id)
@@ -50,7 +64,7 @@ public class Quest : MonoBehaviour
         _questionIndex = id;
         InstantiateQuestion();
         InstantiateAnswers();
-        _questionInstance.CheckAnswersButton.onClick.AddListener(() => 
+        _questionInstance.CheckAnswersButton.onClick.AddListener(() =>
         {
             var succesfulItems = 0;
             for (var i = 0; i < Questions[_questionIndex].Answers.Length; i++)
@@ -94,7 +108,7 @@ public class Quest : MonoBehaviour
             });
             index++;
         }
-        _questAnswers = _questAnswers.ToArray().Mix().ToList();
+        _questAnswers = _questAnswers.Mix();
         foreach (var answer in _questAnswers)
         {
             answer.transform.SetParent(_questionInstance.Answers.transform);
