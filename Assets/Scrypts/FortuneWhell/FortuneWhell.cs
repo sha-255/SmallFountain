@@ -32,6 +32,7 @@ public class FortuneWhell : MonoBehaviour
             cell.Id = i;
             cell.transform.SetParent(transform);
             cell.transform.localScale = Vector3.one;
+            cell.transform.localPosition = Vector3.zero;
             cell.transform.Rotate(new Vector3(0, 0, currentAngle));
         }
     }

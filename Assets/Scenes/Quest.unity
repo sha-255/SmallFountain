@@ -4976,9 +4976,9 @@ RectTransform:
   m_Father: {fileID: 2048679873}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 959.99994, y: 1017.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -62.5}
   m_SizeDelta: {x: 1920, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141095982
@@ -14733,7 +14733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7143865015362448915, guid: 68b0004b4106c7a43b906d2878ae922f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 125.66166
+      value: 125.66165
       objectReference: {fileID: 0}
     - target: {fileID: 7143865015362448915, guid: 68b0004b4106c7a43b906d2878ae922f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16241,78 +16241,302 @@ MonoBehaviour:
   _questions:
   - _questionText: "\u0413\u0434\u0435 \u0432 \u043F\u0440\u0438\u0440\u043E\u0434\u0435
       \u043C\u043E\u0436\u043D\u043E \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
-      \u0432\u043E\u0434\u0443?"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+      \u0432\u043E\u0434\u0443? "
+    _voiceover: {fileID: 8300000, guid: cdb80c9464d67f14a89b85d067b6ed1e, type: 3}
     _answers:
-    - _answerType: 1
-      _answerText: "\u0420\u0435\u043A\u0430"
-      voiceover: {fileID: 8300000, guid: de04f24b4143d1f43bf2fd762ed9c11c, type: 3}
     - _answerType: 0
       _answerText: "\u041F\u0443\u0441\u0442\u044B\u043D\u044F"
       voiceover: {fileID: 8300000, guid: 6d1ed066cc6a7204da1a670ba92056ae, type: 3}
+    - _answerType: 1
+      _answerText: "\u0420\u0435\u043A\u0430"
+      voiceover: {fileID: 8300000, guid: de04f24b4143d1f43bf2fd762ed9c11c, type: 3}
     - _answerType: 0
       _answerText: "\u0421\u0442\u0435\u043F\u044C"
       voiceover: {fileID: 8300000, guid: 7e215a485023f02409154da0946b6e9a, type: 3}
     - _answerType: 0
       _answerText: "\u0422\u0430\u0439\u0433\u0430"
       voiceover: {fileID: 8300000, guid: 9c0ba707a7d028d4db9a05dba8fd1f6b, type: 3}
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?1"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+  - _questionText: "\u041A\u0430\u043A\u0438\u043C \u0436\u0438\u0432\u044B\u043C
+      \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043C\u0430\u043C \u043D\u0443\u0436\u043D\u0430
+      \u0432\u043E\u0434\u0430 ?"
+    _voiceover: {fileID: 8300000, guid: bd6962357ef72a0498317033791b08dc, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u0411\u0430\u043A\u0442\u0435\u0440\u0438\u0438"
+      voiceover: {fileID: 8300000, guid: 5d4d9e65ee3f8ea4f8e09d93400cb74e, type: 3}
+    - _answerType: 0
+      _answerText: "\u041F\u043B\u0435\u0441\u0435\u043D\u044C"
+      voiceover: {fileID: 8300000, guid: 002647712b9778046b2e0c98c6c405bc, type: 3}
+    - _answerType: 1
+      _answerText: "\u0420\u0430\u0441\u0442\u0435\u043D\u0438\u0435"
+      voiceover: {fileID: 8300000, guid: e1f8da2047fcf854d80ca505a263b491, type: 3}
+    - _answerType: 1
+      _answerText: "\u0427\u0435\u043B\u043E\u0432\u0435\u043A"
+      voiceover: {fileID: 8300000, guid: 085f37d9675db6b44b0d806e0d36c081, type: 3}
+  - _questionText: "\u0414\u043B\u044F \u0447\u0435\u0433\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0443
+      \u043D\u0443\u0436\u043D\u0430 \u0432\u043E\u0434\u0430? "
+    _voiceover: {fileID: 8300000, guid: d5a07bdc1812be7438f39e71cfec2418, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.1!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
+      _answerText: "\u0413\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u0435\u0434\u0443"
+      voiceover: {fileID: 8300000, guid: 3f8dc0d715ed17049803185ccd654558, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04421"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?2"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+      _answerText: "\u0418\u0433\u0440\u0430\u0442\u044C \u0441 \u043D\u0435\u0439"
+      voiceover: {fileID: 8300000, guid: 3797ed2d1c8b3cb4bacf239e1c880d0f, type: 3}
+    - _answerType: 1
+      _answerText: "\u041F\u0438\u0442\u044C"
+      voiceover: {fileID: 8300000, guid: 716510cd821ad154da421fc782cc28a2, type: 3}
+    - _answerType: 1
+      _answerText: "\u0423\u043C\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+      voiceover: {fileID: 8300000, guid: 0d8247e5b68500c4d9485f25ed5afeb5, type: 3}
+  - _questionText: "\u041D\u0430\u0437\u043E\u0432\u0438 \u0441\u0432\u043E\u0439\u0441\u0442\u0432\u0430
+      \u0432\u043E\u0434\u044B "
+    _voiceover: {fileID: 8300000, guid: fbb991dd5e0ab6d4f82ba3977587da04, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.2!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
-    - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04422"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u0411\u0435\u0437\u0432\u043A\u0443\u0441\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: a09ae67c18bf13342957ebada1893066, type: 3}
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u04422!"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?3"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+      _answerText: "\u0416\u0438\u0434\u043A\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: e3f26bd2cd6f8444d94d1f02949717d0, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u043B\u0430\u0434\u043A\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 7cfb8b5424a571d4ca5a08aeff2cf2b1, type: 3}
+    - _answerType: 0
+      _answerText: "\u0422\u0432\u0435\u0440\u0434\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: ff24290ce7dccaa43b012ecebe68e421, type: 3}
+  - _questionText: "\u0412 \u043A\u0430\u043A\u0438\u0445 \u0442\u0440\u0435\u0445
+      \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u044F\u0445 \u043C\u043E\u0436\u0435\u0442
+      \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C\u0441\u044F \u0432\u043E\u0434\u0430? "
+    _voiceover: {fileID: 8300000, guid: fa98155c07b0b884fb5f20e0fde364d2, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.3!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
+      _answerText: "\u0413\u0430\u0437\u043E\u043E\u0431\u0440\u0430\u0437\u043D\u044B\u0439"
+      voiceover: {fileID: 8300000, guid: 8e0b55c945841a24592c8e2852b9b7d3, type: 3}
+    - _answerType: 1
+      _answerText: "\u0416\u0438\u0434\u043A\u0438\u0439"
+      voiceover: {fileID: 8300000, guid: 0dbe242132ab22a4da2acf18d8a7e5f4, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04423"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?4"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+      _answerText: "\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439"
+      voiceover: {fileID: 8300000, guid: a42589cd4f10de645937f2900e6d72c5, type: 3}
+    - _answerType: 1
+      _answerText: "\u0422\u0432\u0435\u0440\u0434\u044B\u0439"
+      voiceover: {fileID: 8300000, guid: 9c2319cfa7325a44391b27da694e9f30, type: 3}
+  - _questionText: "\u0427\u0442\u043E \u0431\u0443\u0434\u0435\u0442 \u0441 \u0432\u043E\u0434\u043E\u0439,
+      \u0435\u0441\u043B\u0438 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430
+      \u0432\u043E\u0437\u0434\u0443\u0445\u0430 \u0443\u043F\u0430\u0434\u0435\u0442
+      \u0434\u043E \u043C\u0438\u043D\u0443\u0441\u043E\u0432\u043E\u0439?"
+    _voiceover: {fileID: 8300000, guid: 22e8494aff59ea04787ffb649806f705, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u043E\u043C\u0435\u043D\u044F\u0435\u0442
+        \u0446\u0432\u0435\u0442"
+      voiceover: {fileID: 8300000, guid: 71a3838fc108e9d4387f042c5d8ce4ad, type: 3}
+    - _answerType: 1
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0441\u044F
+        \u0432 \u043B\u0435\u0434"
+      voiceover: {fileID: 8300000, guid: b00baeb5bf92ca14a8ca01c4589d1f5c, type: 3}
+    - _answerType: 0
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0441\u044F
+        \u0432 \u043F\u0430\u0440"
+      voiceover: {fileID: 8300000, guid: 432232cce48ae4346934fcb25b88d05c, type: 3}
+    - _answerType: 0
+      _answerText: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u0441\u044F"
+      voiceover: {fileID: 8300000, guid: e495a5655ab8a264981fe47a5c4b1da6, type: 3}
+  - _questionText: "\u0427\u0442\u043E \u0431\u0443\u0434\u0435\u0442 \u0441\u043E
+      \u043B\u044C\u0434\u043E\u043C, \u0435\u0441\u043B\u0438 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430
+      \u0432\u043E\u0437\u0434\u0443\u0445\u0430 \u043F\u043E\u0434\u043D\u0438\u043C\u0435\u0442\u0441\u044F
+      \u0434\u043E \u043F\u043B\u044E\u0441\u043E\u0432\u043E\u0439? "
+    _voiceover: {fileID: 8300000, guid: 39ef407936047c4409f2a31cec482e00, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0441\u044F
+        \u0432 \u043B\u0435\u0434"
+      voiceover: {fileID: 8300000, guid: 5400f8a305da10d4bbbbca4b89f98dc4, type: 3}
+    - _answerType: 0
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0441\u044F
+        \u0432 \u043F\u0430\u0440"
+      voiceover: {fileID: 8300000, guid: 4075e76a660460c47af2784150a1f7f6, type: 3}
+    - _answerType: 0
+      _answerText: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u0441\u044F"
+      voiceover: {fileID: 8300000, guid: 5a436193a4dbe2440b8ecc967db90528, type: 3}
+    - _answerType: 1
+      _answerText: "\u0420\u0430\u0441\u0442\u0430\u0435\u0442"
+      voiceover: {fileID: 8300000, guid: eadbd1b04f247f944ac2dcc5cc8a070f, type: 3}
+  - _questionText: "\u0427\u0442\u043E \u0431\u0443\u0434\u0435\u0442 \u0441 \u0432\u043E\u0434\u043E\u0439,
+      \u0435\u0441\u043B\u0438 \u043E\u043D\u0430 \u043D\u0430\u0447\u043D\u0435\u0442
+      \u043A\u0438\u043F\u0435\u0442\u044C?"
+    _voiceover: {fileID: 8300000, guid: a48e0840f3e938c4dbc991f54ba92012, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.4!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
+      _answerText: "\u0412\u043E\u0434\u0430 \u043D\u0430\u0447\u043D\u0435\u0442
+        \u0438\u0441\u043F\u0430\u0440\u044F\u0442\u044C\u0441\u044F"
+      voiceover: {fileID: 8300000, guid: 376426245a3cddf468aacdde18b9e0c7, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04424"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?5"
-    _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u043E\u043C\u0435\u043D\u044F\u0435\u0442
+        \u0446\u0432\u0435\u0442"
+      voiceover: {fileID: 8300000, guid: 378a55e72b427084fab435083a047911, type: 3}
+    - _answerType: 0
+      _answerText: "\u0412\u043E\u0434\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0441\u044F
+        \u0432 \u043B\u0435\u0434"
+      voiceover: {fileID: 8300000, guid: 395ce0f6fa1e00b4fbe8dfdb6253a3ce, type: 3}
+    - _answerType: 0
+      _answerText: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442"
+      voiceover: {fileID: 8300000, guid: deb9e5079fc0d0347a791da389629116, type: 3}
+  - _questionText: "\u041A\u0430\u043A\u0430\u044F \u0444\u043E\u0440\u043C\u0430
+      \u0432\u043E\u0434\u044B?"
+    _voiceover: {fileID: 8300000, guid: 78bc18cd9a452d243872483e85aacf42, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.5!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
+      _answerText: "\u0411\u0435\u0437\u0444\u043E\u0440\u043C\u0435\u043D\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: c5a090a247152de478aed71683713b45, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04425"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 361c142f9b1ef07468ef439965343f8c, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04425"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u041A\u0440\u0443\u0433\u043B\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: a9d8d4fce2778c74a998493e9c7d6804, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u04425"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u0422\u0440\u0435\u0443\u0433\u043E\u043B\u044C\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 1bf8dab2e8176274b9efdb956f5a01b5, type: 3}
+  - _questionText: "\u041A\u0430\u043A\u043E\u0433\u043E \u0432\u043E\u0434\u0430
+      \u0446\u0432\u0435\u0442\u0430?"
+    _voiceover: {fileID: 8300000, guid: 8b3f892a8561be84ebe69785b7e11838, type: 3}
+    _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u04425!"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u0411\u0435\u0441\u0446\u0432\u0435\u0442\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 299051947f44fb3479bab15929dd2b72, type: 3}
+    - _answerType: 0
+      _answerText: "\u0413\u043E\u043B\u0443\u0431\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 5e6b77d2031221643b8a1eb9935286b0, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u0435\u0440\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: ace8aa78cb676a846961a3796624a29c, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u0438\u043D\u044F\u044F"
+      voiceover: {fileID: 8300000, guid: c9fc9477e3e725c43b1f64a8045533aa, type: 3}
+  - _questionText: "\u0423\u043C\u0435\u043D\u044C\u0448\u0438\u043B\u0441\u044F
+      \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0432\u043E\u0434\u044B \u0432
+      \u0430\u043A\u0432\u0430\u0440\u0438\u0443\u043C\u0435. \u041F\u043E\u0447\u0435\u043C\u0443?"
+    _voiceover: {fileID: 8300000, guid: 1328970560d09f04cb2731bb82644d94, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u0412\u044B\u0432\u0435\u0442\u0440\u0438\u043B\u0430\u0441\u044C"
+      voiceover: {fileID: 8300000, guid: 653dbc066bc839a4a95e91493d914912, type: 3}
+    - _answerType: 0
+      _answerText: "\u0412\u044B\u043F\u0438\u043B\u0438 \u0440\u044B\u0431\u044B"
+      voiceover: {fileID: 8300000, guid: 6aca985f0365db74b8173ed6b9c4ccc9, type: 3}
+    - _answerType: 0
+      _answerText: "\u0417\u0430\u043C\u0435\u0440\u0437\u043B\u0430"
+      voiceover: {fileID: 8300000, guid: 9c791e31a1d515648b68dcfd88e1156e, type: 3}
+    - _answerType: 1
+      _answerText: "\u0418\u0441\u043F\u0430\u0440\u0438\u043B\u0430\u0441\u044C"
+      voiceover: {fileID: 8300000, guid: 49252ea6c44c0b64281d34db427cf3fc, type: 3}
+  - _questionText: "\u0427\u0435\u0440\u043D\u044B\u0439 \u044F\u0449\u0438\u043A.
+      \u0422\u043E, \u0447\u0442\u043E \u043B\u0435\u0436\u0438\u0442 \u0432 \u0447\u0435\u0440\u043D\u043E\u043C
+      \u044F\u0449\u0438\u043A\u0435, \u043F\u043E\u043C\u043E\u0436\u0435\u0442
+      \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u0446\u0432\u0435\u0442 \u0432\u043E\u0434\u044B.
+      \u0427\u0442\u043E \u043B\u0435\u0436\u0438\u0442 \u0432 \u0447\u0435\u0440\u043D\u043E\u043C
+      \u044F\u0449\u0438\u043A\u0435?"
+    _voiceover: {fileID: 8300000, guid: fa937eea14aef3540b77047f3907427c, type: 3}
+    _answers:
+    - _answerType: 1
+      _answerText: "\u041A\u0440\u0430\u0441\u043A\u0430"
+      voiceover: {fileID: 8300000, guid: 1372fa7fd76e72b4a9632eb061eef758, type: 3}
+    - _answerType: 0
+      _answerText: "\u041B\u0435\u0434"
+      voiceover: {fileID: 8300000, guid: 6b7176293568df94c83e727da5f62ac6, type: 3}
+    - _answerType: 0
+      _answerText: "\u041C\u0438\u043A\u0440\u043E\u0441\u043A\u043E\u043F"
+      voiceover: {fileID: 8300000, guid: 8e221550a1e92bc468e292d46d163d23, type: 3}
+    - _answerType: 0
+      _answerText: "\u041E\u0447\u043A\u0438"
+      voiceover: {fileID: 8300000, guid: cc5a433617946674d9e1c4a0416ce18d, type: 3}
+  - _questionText: "\u0412 \u0447\u0435\u043C \u0437\u0430\u043A\u043B\u044E\u0447\u0430\u0435\u0442\u0441\u044F
+      \u0431\u0435\u0440\u0435\u0436\u043D\u043E\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435
+      \u043A \u0432\u043E\u0434\u0435? "
+    _voiceover: {fileID: 8300000, guid: d794c3fe45a4c93428dde1862e448e4f, type: 3}
+    _answers:
+    - _answerType: 1
+      _answerText: "\u041D\u0435 \u0437\u0430\u0441\u043E\u0440\u044F\u0442\u044C
+        \u0432\u043E\u0434\u043E\u0435\u043C\u044B"
+      voiceover: {fileID: 8300000, guid: 7936b30c911290c41bdae072f04109b2, type: 3}
+    - _answerType: 1
+      _answerText: "\u041D\u0435 \u0438\u0433\u0440\u0430\u0442\u044C \u0441 \u0432\u043E\u0434\u043E\u0439"
+      voiceover: {fileID: 8300000, guid: 066ee85f4e5aee4459a4e8af836bb51b, type: 3}
+    - _answerType: 0
+      _answerText: "\u041F\u0438\u0442\u044C \u043A\u0438\u043F\u044F\u0447\u0435\u043D\u0443\u044E
+        \u0432\u043E\u0434\u0443"
+      voiceover: {fileID: 8300000, guid: 4e2499c59cf60ba4b8d373e8cd0e4b58, type: 3}
+    - _answerType: 1
+      _answerText: "\u042D\u043A\u043E\u043D\u043E\u043C\u0438\u0442\u044C \u0432\u043E\u0434\u0443"
+      voiceover: {fileID: 8300000, guid: 910a90dd7fe5b464b986c3538c586e81, type: 3}
+  - _questionText: "\u0424\u0438\u0437\u043A\u0443\u043B\u044C\u0442  \u043C\u0438\u043D\u0443\u0442\u043A\u0430"
+    _voiceover: {fileID: 8300000, guid: 6ee4358cb05ce9b4fb435ad50e6c398e, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u041D\u0430\u0434 \u0432\u043E\u043B\u043D\u0430\u043C\u0438
+        \u0447\u0430\u0439\u043A\u0438 \u043A\u0440\u0443\u0436\u0430\u0442, |\u041F\u043E\u043B\u0435\u0442\u0438\u043C
+        \u0437\u0430 \u043D\u0438\u043C\u0438 \u0434\u0440\u0443\u0436\u043D\u043E.
+        |\u0411\u0440\u044B\u0437\u0433\u0438 \u043F\u0435\u043D\u044B, \u0448\u0443\u043C
+        \u043F\u0440\u0438\u0431\u043E\u044F, |\u0410 \u043D\u0430\u0434 \u043C\u043E\u0440\u0435\u043C
+        \u2014 \u043C\u044B \u0441 \u0442\u043E\u0431\u043E\u044E! |\u041C\u044B
+        \u0442\u0435\u043F\u0435\u0440\u044C \u043F\u043B\u044B\u0432\u0435\u043C
+        \u043F\u043E \u043C\u043E\u0440\u044E |\u0418 \u0440\u0435\u0437\u0432\u0438\u043C\u0441\u044F
+        \u043D\u0430 \u043F\u0440\u043E\u0441\u0442\u043E\u0440\u0435. |\u0412\u0435\u0441\u0435\u043B\u0435\u0435
+        \u0437\u0430\u0433\u0440\u0435\u0431\u0430\u0439 |\u0418 \u0434\u0435\u043B\u044C\u0444\u0438\u043D\u043E\u0432
+        \u0434\u043E\u0433\u043E\u043D\u044F\u0439."
+      voiceover: {fileID: 8300000, guid: fbbac256c4a42724dab94cfb48b33d96, type: 3}
+  - _questionText: "\u0413\u0434\u0435 \u0432 \u043F\u0440\u0438\u0440\u043E\u0434\u0435
+      \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442\u0441\u044F \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u0430\u044F
+      \u0432\u043E\u0434\u0430? "
+    _voiceover: {fileID: 8300000, guid: acc8e72f9b15448478da06084f4df200, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u041A\u0438\u043F\u044F\u0447\u0435\u043D\u0430\u044F \u0412\u043E\u0434\u0430"
+      voiceover: {fileID: 8300000, guid: 6d822f26a8312d54085dff474301ea77, type: 3}
+    - _answerType: 1
+      _answerText: "\u041B\u0435\u0434"
+      voiceover: {fileID: 8300000, guid: b4e186e6463b0ac46989028526ec6eb0, type: 3}
+    - _answerType: 0
+      _answerText: "\u0420\u043E\u0434\u043D\u0438\u043A\u043E\u0432\u0430\u044F
+        \u0432\u043E\u0434\u0430"
+      voiceover: {fileID: 8300000, guid: 5c624fd7e18dfa341881d3e6f633f2cb, type: 3}
+    - _answerType: 1
+      _answerText: "\u0421\u043D\u0435\u0436\u0438\u043D\u043A\u0438"
+      voiceover: {fileID: 8300000, guid: 533c3ae1223970d46b4229807127b89c, type: 3}
+  - _questionText: "\u041A\u0430\u043A\u0430\u044F \u0432\u043E\u0434\u0430 \u043F\u0440\u0438\u0433\u043E\u0434\u043D\u0430
+      \u0434\u043B\u044F \u043F\u0438\u0442\u044C\u044F? "
+    _voiceover: {fileID: 8300000, guid: 1b8bb940b86913d448bd9fb6aa49bcb6, type: 3}
+    _answers:
+    - _answerType: 0
+      _answerText: "\u0414\u043E\u0436\u0434\u0435\u0432\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: d0aba0e68afc32642af313a4e36c8791, type: 3}
+    - _answerType: 0
+      _answerText: "\u0418\u0437 \u0432\u043E\u0434\u043E\u0435\u043C\u0430"
+      voiceover: {fileID: 8300000, guid: a4b05c7fbeacad24db540b5832e1e50d, type: 3}
+    - _answerType: 1
+      _answerText: "\u041A\u0438\u043F\u044F\u0447\u0435\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 676f982bd0613364790c4a3517b2e483, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u0442\u043E\u0447\u043D\u0430\u044F"
+      voiceover: {fileID: 8300000, guid: 37c8ac1e0fdd85d42b1055ed5df8a2fc, type: 3}
+  - _questionText: "\u041A\u0430\u043A\u043E\u0439 \u0437\u0430\u043F\u0430\u0445
+      \u0443 \u0432\u043E\u0434\u044B? "
+    _voiceover: {fileID: 8300000, guid: c3ce2bbe83073d04b8d00447228e0aae, type: 3}
+    _answers:
+    - _answerType: 1
+      _answerText: "\u0411\u0435\u0437 \u0437\u0430\u043F\u0430\u0445\u0430"
+      voiceover: {fileID: 8300000, guid: b50dcc4ea0b918548ad4514d9bdbee4d, type: 3}
+    - _answerType: 0
+      _answerText: "\u0413\u043E\u0440\u044C\u043A\u0438\u0439"
+      voiceover: {fileID: 8300000, guid: f1c3ab5414a7d3148857cd8a95a1e775, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u043B\u0430\u0434\u043A\u0438\u0439"
+      voiceover: {fileID: 8300000, guid: 40e5d300c827f3e4eb17839628a128da, type: 3}
+    - _answerType: 0
+      _answerText: "\u0421\u043E\u043B\u0435\u043D\u044B\u0439"
+      voiceover: {fileID: 8300000, guid: 58766de623e950b42aba24cf81722cee, type: 3}
   _questionPrefab: {fileID: 9144918441556610371, guid: b96a260965a6dd24a984090e7cc29f96, type: 3}
   _ansverPrefab: {fileID: 1282918366801366563, guid: 5e48b0fce587c164a9701b94c17fca83, type: 3}
   _dropsCounter: {fileID: 1458834572}
