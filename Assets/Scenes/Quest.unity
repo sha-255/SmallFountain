@@ -16239,21 +16239,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _questions:
-  - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?"
+  - _questionText: "\u0413\u0434\u0435 \u0432 \u043F\u0440\u0438\u0440\u043E\u0434\u0435
+      \u043C\u043E\u0436\u043D\u043E \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
+      \u0432\u043E\u0434\u0443?"
     _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
     _answers:
     - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442.!"
-      voiceover: {fileID: 8300000, guid: 36a1c572028bdbe49a3c77af5c9a77c9, type: 3}
+      _answerText: "\u0420\u0435\u043A\u0430"
+      voiceover: {fileID: 8300000, guid: de04f24b4143d1f43bf2fd762ed9c11c, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u0442"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
-    - _answerType: 1
-      _answerText: "\u041E\u0442\u0432\u0435\u0442!"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u041F\u0443\u0441\u0442\u044B\u043D\u044F"
+      voiceover: {fileID: 8300000, guid: 6d1ed066cc6a7204da1a670ba92056ae, type: 3}
     - _answerType: 0
-      _answerText: "\u041E\u0442\u0432\u0435\u0442"
-      voiceover: {fileID: 8300000, guid: b1dc32019eaf72148a11267787ffa88b, type: 3}
+      _answerText: "\u0421\u0442\u0435\u043F\u044C"
+      voiceover: {fileID: 8300000, guid: 7e215a485023f02409154da0946b6e9a, type: 3}
+    - _answerType: 0
+      _answerText: "\u0422\u0430\u0439\u0433\u0430"
+      voiceover: {fileID: 8300000, guid: 9c0ba707a7d028d4db9a05dba8fd1f6b, type: 3}
   - _questionText: "\u0412\u043E\u043F\u0440\u043E\u0441?1"
     _voiceover: {fileID: 8300000, guid: 2164f1936910b6a4185fbe56a1e77bc6, type: 3}
     _answers:
