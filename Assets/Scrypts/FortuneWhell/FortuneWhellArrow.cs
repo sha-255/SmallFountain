@@ -9,13 +9,13 @@ public class FortuneWhellArrow : MonoBehaviour
     [SerializeField] private float _twistStrength = 20;
     [SerializeField] private UnityEvent<int> _cellSelected;
     private List<int> _cellsId = new List<int>();
-    private bool a = true;
+    private bool isSpin = true;
 
     private void Awake()
     {
         _fortuneWhell.StartSpin.AddListener(()=> 
         {
-            a = true;
+            isSpin = true;
         });
     }
 
@@ -40,7 +40,7 @@ public class FortuneWhellArrow : MonoBehaviour
         {
             _fortuneWhell.SpinVelocity = 0;
             cell.Interactable = false;
-            a = false;
+            isSpin = false;
             _cellsId.Add(cell.Id);
             _cellSelected?.Invoke(cell.Id);
         }
